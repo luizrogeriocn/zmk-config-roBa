@@ -12,7 +12,19 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <30 31>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <22 23>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -39,10 +51,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp F         &kp P                   &kp B                                       &kp J            &kp L  &kp U      &kp Y    &kp SEMICOLON
-&kp A             &kp R         &kp S         &kp T                   &kp G      &kp K_PLAY_PAUSE      &kp DEL    &kp M            &kp N  &kp E      &kp I    &kp O
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp D                   &kp V      &kp ESC               &kp ENTER  &kp K            &kp H  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 SPACE  &lt 2 TAB  &kp LEFT_SHIFT        &kp TAB    &lt 1 BACKSPACE                             &kp DEL
+&kp Q               &kp W           &kp F               &kp P                   &kp B                                       &kp J            &kp L              &kp U                &kp Y            &kp SEMICOLON
+&mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T        &kp G      &kp K_PLAY_PAUSE      &kp DEL    &kp M            &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND E  &mt RIGHT_ALT I  &mt RIGHT_CONTROL O
+&mt LEFT_SHIFT Z    &kp X           &kp C               &kp D                   &kp V      &kp ESC               &kp ENTER  &kp K            &kp H              &kp COMMA            &kp DOT          &kp SLASH
+&kp LCTRL           &kp LEFT_WIN    &kp LEFT_ALT        &lt_to_layer_0 1 SPACE  &lt 2 TAB  &kp LEFT_SHIFT        &kp TAB    &lt 1 BACKSPACE                                                           &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
