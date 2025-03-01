@@ -35,11 +35,6 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <31 32>;
         };
-
-        Toggle_Scroll {
-            bindings = <&mo 5>;
-            key-positions = <33 32>;
-        };
     };
 
     macros {
@@ -106,7 +101,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &mo 5
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
