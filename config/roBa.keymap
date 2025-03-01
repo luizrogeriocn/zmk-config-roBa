@@ -37,7 +37,7 @@
         };
 
         Toggle_Scroll {
-            bindings = <&tog 4>;
+            bindings = <&tog 5>;
             key-positions = <33 32>;
         };
     };
