@@ -25,6 +25,16 @@
             bindings = <&kp ESCAPE>;
             key-positions = <24 25>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <23 24>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <31 32>;
+        };
     };
 
     macros {
@@ -52,10 +62,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W         &kp F             &kp P      &kp B                                                  &kp J         &kp L  &kp U      &kp Y    &kp SEMICOLON
-&mt LEFT_CONTROL A  &kp R         &kp S             &kp T      &kp G      &kp C_PLAY_PAUSE             &trans         &kp M         &kp N  &kp E      &kp I    &mt RIGHT_CONTROL O
-&kp Z               &kp X         &kp C             &kp D      &kp V      &trans                       &trans         &kp K         &kp H  &kp COMMA  &kp DOT  &mt RIGHT_COMMAND SLASH
-&trans              &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 TAB  &kp SPACE  &mt LEFT_SHIFT CAPSLOCK      &kp BACKSPACE  &lt 2 DELETE                             &tog 4
+&kp Q               &kp W         &kp F             &kp P      &kp B                                                 &kp J            &kp L  &kp U      &kp Y    &kp SEMICOLON
+&mt LEFT_CONTROL A  &kp R         &kp S             &kp T      &kp G        &kp C_PLAY_PAUSE             &trans      &kp M            &kp N  &kp E      &kp I    &mt RIGHT_CONTROL O
+&mt LEFT_SHIFT Z    &kp X         &kp C             &kp D      &kp V        &trans                       &trans      &kp K            &kp H  &kp COMMA  &kp DOT  &mt RIGHT_COMMAND SLASH
+&trans              &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 TAB  &lt 2 SPACE  &mt LEFT_SHIFT CAPSLOCK      &kp DELETE  &lt 2 BACKSPACE                             &tog 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
