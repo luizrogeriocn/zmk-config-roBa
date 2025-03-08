@@ -67,7 +67,7 @@
         default_layer {
             bindings = <
 &kp Q               &kp W           &kp F               &kp P             &kp B                                        &kp J          &kp L             &kp U               &kp Y           &kp SEMICOLON
-&mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt S LEFT_COMMAND  &mt LEFT_SHIFT T  &kp G  &kp C_PLAY_PAUSE      &msc SCRL_UP    &kp M          &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &mt LEFT_ALT I  &mt LEFT_CONTROL O
+&mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G  &kp C_PLAY_PAUSE      &msc SCRL_UP    &kp M          &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &mt LEFT_ALT I  &mt LEFT_CONTROL O
 &kp Z               &kp X           &kp C               &kp D             &kp V  &kp ESC               &msc SCRL_DOWN  &kp K          &kp H             &kp COMMA           &kp PERIOD      &kp SLASH
 &mo 3               &none           &caps_word          &kp SPACE         &mo 1  &kp LEFT_SHIFT        &mo 2           &kp BACKSPACE                                                        &mo 3
             >;
