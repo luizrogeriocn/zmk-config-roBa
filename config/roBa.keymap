@@ -40,6 +40,21 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <31 32>;
         };
+
+        Quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <8 7>;
+        };
+
+        Grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <6 7>;
+        };
+
+        Caret {
+            bindings = <&kp CARET>;
+            key-positions = <8 7 6>;
+        };
     };
 
     macros {
@@ -78,10 +93,10 @@
 
         Symbols {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPS                       &trans  &kp TILDE      &kp PIPE        &kp GRAVE         &kp DOUBLE_QUOTES
-&kp HASH         &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTRK  &trans      &trans  &trans  &kp LESS_THAN  &kp UNDERSCORE  &kp GREATER_THAN  &kp SINGLE_QUOTE
-&kp PERCENT      &kp CARET    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans     &trans      &trans  &trans  &kp EQUAL      &kp MINUS       &kp PLUS          &kp BACKSLASH
-&trans           &trans       &trans                &trans                 &trans     &trans      &trans  &trans                                                   &trans
+&kp EXCLAMATION  &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none                       &trans  &kp ASTERISK   &kp PIPE        &kp AMPERSAND     &kp COLON
+&kp HASH         &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none   &trans      &trans  &trans  &kp LESS_THAN  &kp UNDERSCORE  &kp GREATER_THAN  &kp SINGLE_QUOTE
+&kp PERCENT      &kp CARET    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans      &trans  &trans  &kp EQUAL      &kp MINUS       &kp PLUS          &kp BACKSLASH
+&trans           &trans       &trans                &trans                 &trans  &trans      &trans  &trans                                                   &trans
             >;
         };
 
