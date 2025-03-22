@@ -20,12 +20,6 @@
     quick-tap-ms = <QUICK_TAP_TERM>;
 };
 
-&lt {
-    tapping-term-ms = <TAPPING_TERM>;
-    flavor = "tap-preferred";
-    quick-tap-ms = <QUICK_TAP_TERM>;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -91,10 +85,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W           &kp F               &kp P             &kp B                                             &kp J            &kp L             &kp U               &kp Y           &kp SEMICOLON
-&mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G        &kp C_PLAY_PAUSE        &none        &kp M            &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &mt LEFT_ALT I  &mt LEFT_CONTROL O
-&kp Z               &kp X           &kp C               &kp D             &kp V        &caps_word              &kp DELETE   &kp K            &kp H             &lt 5 COMMA         &kp PERIOD      &kp SLASH
-&kp LEFT_CONTROL    &kp LEFT_ALT    &kp LEFT_COMMAND    &lt 2 ESCAPE      &lt 1 SPACE  &mt LEFT_SHIFT TAB      &lt 1 ENTER  &lt 2 BACKSPACE                                                        &mo 3
+&kp Q               &kp W           &kp F               &kp P             &kp B                                           &kp J            &kp L             &kp U               &kp Y           &kp SEMICOLON
+&mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G        &kp C_PLAY_PAUSE      &none        &kp M            &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &mt LEFT_ALT I  &mt LEFT_CONTROL O
+&kp Z               &kp X           &kp C               &kp D             &kp V        &caps_word            &kp DELETE   &kp K            &kp H             &lt 5 COMMA         &kp PERIOD      &kp SLASH
+&kp LEFT_CONTROL    &kp LEFT_ALT    &kp LEFT_COMMAND    &lt 2 ESCAPE      &lt 1 SPACE  &kp LEFT_SHIFT        &lt 1 ENTER  &lt 2 BACKSPACE                                                        &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
