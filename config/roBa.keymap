@@ -10,11 +10,20 @@
 
 /* Global defaults */
 
-#define QUICK_TAP_MS 175
+#define COMBO_TERM 30
+#define TAPPING_TERM 275
+#define QUICK_TAP_TERM 175
 
 &mt {
-    flavor = "balanced";
-    quick-tap-ms = <175>;
+    tapping-term-ms = <TAPPING_TERM>;
+    flavor = "tap-preferred";
+    quick-tap-ms = <QUICK_TAP_TERM>;
+};
+
+&lt {
+    tapping-term-ms = <TAPPING_TERM>;
+    flavor = "tap-preferred";
+    quick-tap-ms = <QUICK_TAP_TERM>;
 };
 
 / {
