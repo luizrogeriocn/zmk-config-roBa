@@ -35,13 +35,13 @@
             key-positions = <30 31>;
         };
 
-        esc {
+        paste {
             bindings = <&kp ESCAPE>;
             key-positions = <24 25>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
+        copy {
+            bindings = <&kp K_COPY>;
             key-positions = <23 24>;
         };
 
@@ -58,11 +58,6 @@
         Caret {
             bindings = <&kp CARET>;
             key-positions = <8 7 6>;
-        };
-
-        scroll {
-            bindings = <&mo 5>;
-            key-positions = <31 19>;
         };
     };
 
