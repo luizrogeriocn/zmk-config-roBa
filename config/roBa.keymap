@@ -84,12 +84,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-        my_tap_dance {
-            taps: 2;
-            behavior: "tap_dance";
-            tap_code: DOT;
-            shift_tap_code: COLON;
-        };
     };
 
     keymap {
