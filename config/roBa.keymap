@@ -84,6 +84,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        dot_colon: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_COLON";
+            bindings = <&kp PERIOD>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -93,7 +102,7 @@
             bindings = <
 &kp Q               &kp W           &kp F               &kp P             &kp B                                           &kp J            &kp L             &kp U               &kp Y           &kp SEMICOLON
 &mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G        &kp C_PLAY_PAUSE      &none        &kp M            &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &mt LEFT_ALT I  &mt LEFT_CONTROL O
-&kp Z               &kp X           &kp C               &kp D             &kp V        &caps_word            &kp DELETE   &kp K            &kp H             &lt 5 COMMA         &kp PERIOD      &kp SLASH
+&kp Z               &kp X           &kp C               &kp D             &kp V        &caps_word            &kp DELETE   &kp K            &kp H             &lt 5 COMMA         &dot_colon      &kp SLASH
 &kp LEFT_CONTROL    &kp LEFT_ALT    &kp LEFT_COMMAND    &lt 2 ESCAPE      &lt 1 SPACE  &kp LEFT_SHIFT        &lt 1 ENTER  &lt 2 BACKSPACE                                                        &mo 3
             >;
 
