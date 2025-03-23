@@ -45,11 +45,6 @@
             key-positions = <23 24>;
         };
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <31 32>;
-        };
-
         Quote {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <8 7>;
@@ -63,6 +58,11 @@
         Caret {
             bindings = <&kp CARET>;
             key-positions = <8 7 6>;
+        };
+
+        scroll {
+            bindings = <&mo 5>;
+            key-positions = <31 19>;
         };
     };
 
@@ -93,6 +93,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        semi_comma: semi_comma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SEMI_COMMA";
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -100,10 +109,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W           &kp F               &kp P             &kp B                                           &kp J            &kp L             &kp U               &kp Y           &kp SEMICOLON
-&mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G        &kp C_PLAY_PAUSE      &none        &kp M            &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &mt LEFT_ALT I  &mt LEFT_CONTROL O
-&kp Z               &kp X           &kp C               &kp D             &kp V        &caps_word            &kp DELETE   &kp K            &kp H             &lt 5 COMMA         &dot_colon      &kp SLASH
-&kp LEFT_CONTROL    &kp LEFT_ALT    &kp LEFT_COMMAND    &lt 2 ESCAPE      &lt 1 SPACE  &kp LEFT_SHIFT        &lt 1 ENTER  &lt 2 BACKSPACE                                                        &mo 3
+&kp Q               &kp W           &kp F               &kp P             &kp B                                          &kp J            &kp L             &kp U               &kp Y           &kp SEMICOLON
+&mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G        &kp C_PLAY_PAUSE      &none       &kp M            &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &mt LEFT_ALT I  &mt LEFT_CONTROL O
+&kp Z               &kp X           &kp C               &kp D             &kp V        &caps_word            &kp DELETE  &kp K            &kp H             &lt 5 COMMA         &kp DOT         &kp SLASH
+&kp LEFT_CONTROL    &kp LEFT_ALT    &kp LEFT_COMMAND    &lt 2 ESCAPE      &lt 1 SPACE  &kp LEFT_SHIFT        &lt 1 TAB   &lt 2 BACKSPACE                                                        &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
