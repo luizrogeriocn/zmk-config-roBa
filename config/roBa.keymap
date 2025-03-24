@@ -33,21 +33,20 @@
         enter {
             bindings = <&kp ENTER>;
             key-positions = <30 31>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
         };
 
         Quote {
             bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <8 7>;
+            key-positions = <8 9>;
+            layers = <0>;
         };
 
         Grave {
             bindings = <&kp GRAVE>;
-            key-positions = <6 7>;
-        };
-
-        Caret {
-            bindings = <&kp CARET>;
-            key-positions = <8 7 6>;
+            key-positions = <0 1>;
+            layers = <0>;
         };
 
         exclamation {
@@ -88,6 +87,16 @@
         asterisk {
             bindings = <&kp ASTERISK>;
             key-positions = <24 12>;
+        };
+
+        underline {
+            bindings = <&kp UNDER>;
+            key-positions = <25 13>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <14 26>;
         };
     };
 
