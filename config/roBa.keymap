@@ -141,8 +141,8 @@
             layers = <0>;
         };
 
-        question {
-            bindings = <&kp QUESTION>;
+        backslash {
+            bindings = <&kp BACKSLASH>;
             key-positions = <33 21>;
             layers = <0>;
         };
