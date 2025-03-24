@@ -13,17 +13,20 @@
 #define COMBO_TERM 30
 #define TAPPING_TERM 300
 #define QUICK_TAP_TERM 175
+#define REQUIRE_PRIOR_IDLE 175
 
 &mt {
     tapping-term-ms = <TAPPING_TERM>;
     flavor = "tap-preferred";
     quick-tap-ms = <QUICK_TAP_TERM>;
+    require-prior-idle-ms = <REQUIRE_PRIOR_IDLE>;
 };
 
 &lt {
     tapping-term-ms = <TAPPING_TERM>;
     flavor = "tap-preferred";
     quick-tap-ms = <QUICK_TAP_TERM>;
+    require-prior-idle-ms = <REQUIRE_PRIOR_IDLE>;
 };
 
 / {
