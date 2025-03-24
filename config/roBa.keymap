@@ -30,13 +30,6 @@
     combos {
         compatible = "zmk,combos";
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <30 31>;
-            require-prior-idle-ms = <200>;
-            layers = <0>;
-        };
-
         Quote {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <8 9>;
@@ -108,6 +101,72 @@
             key-positions = <14 26>;
             layers = <0>;
         };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <31 19>;
+            layers = <0>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <19 7>;
+            layers = <0>;
+        };
+
+        lesser {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <30 18>;
+            layers = <0>;
+        };
+
+        greater {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <32 20>;
+            layers = <0>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <6 18>;
+            layers = <0>;
+        };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <9 21>;
+            layers = <0>;
+        };
+
+        question {
+            bindings = <&kp QUESTION>;
+            key-positions = <33 21>;
+            layers = <0>;
+        };
+
+        L-paren {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <1 2>;
+            layers = <0>;
+        };
+
+        R-paren {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <2 3>;
+            layers = <0>;
+        };
+
+        L-bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <6 7>;
+            layers = <0>;
+        };
+
+        R-bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <7 8>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -153,10 +212,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W           &kp F               &kp P             &kp B                                          &kp J            &kp L             &kp U               &kp Y           &kp SEMICOLON
-&mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G        &kp C_PLAY_PAUSE      &none       &kp M            &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &mt LEFT_ALT I  &mt LEFT_CONTROL O
-&kp Z               &kp X           &kp C               &kp D             &kp V        &caps_word            &kp DELETE  &kp K            &kp H             &lt 5 COMMA         &kp DOT         &kp SLASH
-&kp LEFT_CONTROL    &kp LEFT_ALT    &kp LEFT_COMMAND    &lt 2 ESCAPE      &lt 1 SPACE  &kp LEFT_SHIFT        &lt 1 TAB   &lt 2 BACKSPACE                                                        &mo 3
+&kp Q               &kp W           &kp F               &kp P             &kp B                                         &kp J            &kp L             &kp U               &kp Y           &kp SEMICOLON
+&mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G        &kp C_PLAY_PAUSE      &kp DEL    &kp M            &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &mt LEFT_ALT I  &mt LEFT_CONTROL O
+&kp Z               &kp X           &kp C               &kp D             &kp V        &caps_word            &kp TAB    &kp K            &kp H             &lt 5 COMMA         &kp DOT         &kp SLASH
+&kp LEFT_CONTROL    &kp LEFT_ALT    &kp LEFT_COMMAND    &kp LEFT_SHIFT    &lt 1 SPACE  &kp ESC               &kp ENTER  &lt 2 BACKSPACE                                                        &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
