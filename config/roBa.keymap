@@ -35,16 +35,6 @@
             key-positions = <30 31>;
         };
 
-        paste {
-            bindings = <&kp ESCAPE>;
-            key-positions = <24 25>;
-        };
-
-        copy {
-            bindings = <&kp K_COPY>;
-            key-positions = <23 24>;
-        };
-
         Quote {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <8 7>;
@@ -58,6 +48,46 @@
         Caret {
             bindings = <&kp CARET>;
             key-positions = <8 7 6>;
+        };
+
+        exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <0 10>;
+        };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <11 1>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <12 2>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <3 13>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <4 14>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <10 22>;
+        };
+
+        ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <23 11>;
+        };
+
+        asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <24 12>;
         };
     };
 
