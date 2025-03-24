@@ -147,25 +147,25 @@
             layers = <0>;
         };
 
-        L-paren {
+        Lparen {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <1 2>;
             layers = <0>;
         };
 
-        R-paren {
+        Rparen {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <2 3>;
             layers = <0>;
         };
 
-        L-bracket {
+        Lbracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <6 7>;
             layers = <0>;
         };
 
-        R-bracket {
+        Rbracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <7 8>;
             layers = <0>;
