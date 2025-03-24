@@ -17,7 +17,7 @@ layers:
   - {t: T, h: LEFT SHIFT}
   - G
   - PLAY PAUSE
-  - ''
+  - DEL
   - M
   - {t: N, h: LEFT SHIFT}
   - {t: E, h: LEFT COMMAND}
@@ -29,7 +29,7 @@ layers:
   - D
   - V
   - '&caps_word'
-  - DELETE
+  - TAB
   - K
   - H
   - {t: ',', h: '5'}
@@ -38,10 +38,10 @@ layers:
   - LEFT CONTROL
   - LEFT ALT
   - LEFT COMMAND
-  - {t: ESCAPE, h: '2'}
-  - {t: SPACE, h: Symbols}
   - LEFT SHIFT
-  - {t: TAB, h: Symbols}
+  - {t: SPACE, h: Symbols}
+  - ESC
+  - ENTER
   - {t: BACKSPACE, h: '2'}
   - keebconfig
   Symbols:
@@ -126,11 +126,11 @@ layers:
   - ''
   - ''
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
   - ''
   keebconfig:
   - ''
@@ -223,9 +223,6 @@ layers:
   - ''
   - ''
 combos:
-- p: [30, 31]
-  k: ENTER
-  l: [default]
 - p: [8, 9]
   k: ''''
   l: [default]
@@ -261,4 +258,37 @@ combos:
   l: [default]
 - p: [14, 26]
   k: '|'
+  l: [default]
+- p: [31, 19]
+  k: '-'
+  l: [default]
+- p: [19, 7]
+  k: +
+  l: [default]
+- p: [30, 18]
+  k: <
+  l: [default]
+- p: [32, 20]
+  k: '>'
+  l: [default]
+- p: [6, 18]
+  k: '='
+  l: [default]
+- p: [9, 21]
+  k: ':'
+  l: [default]
+- p: [33, 21]
+  k: '?'
+  l: [default]
+- p: [1, 2]
+  k: (
+  l: [default]
+- p: [2, 3]
+  k: )
+  l: [default]
+- p: [6, 7]
+  k: '['
+  l: [default]
+- p: [7, 8]
+  k: ']'
   l: [default]
