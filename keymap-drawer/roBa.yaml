@@ -223,10 +223,10 @@ layers:
   - ''
   - ''
 combos:
-- p: [8, 9]
+- p: [8, 20]
   k: ''''
   l: [default]
-- p: [0, 1]
+- p: [17, 5]
   k: '`'
   l: [default]
 - p: [0, 10]
@@ -254,41 +254,23 @@ combos:
   k: '*'
   l: [default]
 - p: [25, 13]
-  k: _
+  k: (
   l: [default]
 - p: [14, 26]
-  k: '|'
+  k: )
   l: [default]
 - p: [31, 19]
   k: '-'
   l: [default]
 - p: [19, 7]
-  k: +
-  l: [default]
-- p: [30, 18]
-  k: <
-  l: [default]
-- p: [32, 20]
-  k: '>'
-  l: [default]
-- p: [6, 18]
   k: '='
   l: [default]
-- p: [9, 21]
-  k: ':'
-  l: [default]
-- p: [33, 21]
+- p: [20, 8]
   k: \
   l: [default]
-- p: [1, 2]
-  k: (
-  l: [default]
-- p: [2, 3]
-  k: )
-  l: [default]
-- p: [6, 7]
+- p: [17, 29]
   k: '['
   l: [default]
-- p: [7, 8]
+- p: [18, 30]
   k: ']'
   l: [default]
