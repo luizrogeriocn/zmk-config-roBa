@@ -39,8 +39,8 @@ layers:
   - LEFT ALT
   - LEFT COMMAND
   - LEFT SHIFT
-  - {t: SPACE, h: Symbols}
-  - ESC
+  - {t: SPACE, h: '2'}
+  - {t: ESC, h: Symbols}
   - ENTER
   - {t: BACKSPACE, h: '2'}
   - keebconfig
@@ -83,8 +83,8 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
   - ''
+  - {type: held}
   - ''
   - ''
   - ''
@@ -127,10 +127,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
   - {type: held}
+  - ''
+  - ''
+  - ''
   - ''
   keebconfig:
   - ''
