@@ -37,12 +37,14 @@
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <8 7>;
             layers = <0>;
+            require-prior-idle-ms = <175>;
         };
 
         Grave {
             bindings = <&kp GRAVE>;
             key-positions = <1 2>;
             layers = <0>;
+            require-prior-idle-ms = <175>;
         };
 
         exclamation {
@@ -175,30 +177,35 @@
             bindings = <&kp TILDE>;
             key-positions = <2 3>;
             layers = <0>;
+            require-prior-idle-ms = <175>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <23 24>;
             layers = <0>;
+            require-prior-idle-ms = <175>;
         };
 
         esc {
             bindings = <&kp ESC>;
             key-positions = <24 25>;
             layers = <0>;
+            require-prior-idle-ms = <175>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <30 31>;
             layers = <0>;
+            require-prior-idle-ms = <175>;
         };
 
         bkspc {
             bindings = <&kp BACKSPACE>;
             key-positions = <32 31>;
             layers = <0>;
+            require-prior-idle-ms = <175>;
         };
     };
 
