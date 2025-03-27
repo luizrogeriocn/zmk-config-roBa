@@ -307,3 +307,5 @@ combos:
 - p: [32, 31]
   k: BACKSPACE
   l: [default]
+- p: [28, 16]
+  k: '&outputmacro'
