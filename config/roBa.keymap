@@ -206,6 +206,11 @@
             layers = <0>;
             require-prior-idle-ms = <175>;
         };
+
+        outstring {
+            bindings = <&outputmacro>;
+            key-positions = <28 16>;
+        };
     };
 
     macros {
@@ -214,6 +219,13 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        outputmacro: outputmacro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp Z &kp X &kp C &kp V &kp FSLH &kp DOT &kp COMMA &kp M>;
+            label = "OUTPUTMACRO";
         };
     };
 
