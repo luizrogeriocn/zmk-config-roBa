@@ -11,8 +11,8 @@
 /* Global defaults */
 
 #define COMBO_TERM 30
-#define TAPPING_TERM 300
-#define QUICK_TAP_TERM 175
+#define TAPPING_TERM 250
+#define QUICK_TAP_TERM 250
 #define REQUIRE_PRIOR_IDLE 175
 
 &mt {
