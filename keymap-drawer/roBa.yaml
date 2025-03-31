@@ -40,53 +40,53 @@ layers:
   - LEFT COMMAND
   - LEFT SHIFT
   - {t: SPACE, h: '2'}
-  - {t: ESC, h: querty}
+  - {t: ESC, h: gaming}
   - ENTER
   - {t: BACKSPACE, h: '2'}
   - keebconfig
-  querty:
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - A
-  - S
-  - D
-  - F
-  - G
+  gaming:
+  - ESCAPE
+  - KP 7
+  - KP 8
+  - KP 9
   - ''
   - ''
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - Z
-  - X
-  - C
-  - V
-  - B
+  - F9
+  - F10
+  - F11
+  - F12
+  - LEFT SHIFT
+  - KP 4
+  - KP 5
+  - KP 6
   - ''
   - ''
-  - N
-  - M
-  - ','
-  - .
-  - /
+  - ''
+  - ''
+  - F5
+  - F6
+  - F7
+  - F8
+  - LEFT CONTROL
+  - KP 1
+  - KP 2
+  - KP 3
+  - ''
+  - ''
+  - ''
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
   - LEFT ALT
   - ''
-  - LCTRL
-  - LEFT SHIFT
+  - ''
+  - ''
   - SPACE
   - {type: held}
   - ''
-  - BACKSPACE
+  - ''
   - {t: default, h: toggle}
   '2':
   - ''
@@ -352,5 +352,5 @@ combos:
 - p: [28, 16]
   k: '&outputmacro'
 - p: [9, 42]
-  k: {t: querty, h: toggle}
+  k: {t: gaming, h: toggle}
   l: [default]
