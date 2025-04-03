@@ -272,7 +272,7 @@
 &kp Q               &kp W           &kp F               &kp P             &kp B                                         &kp J            &kp L             &kp U               &kp Y           &kp SEMICOLON
 &mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G        &kp C_PLAY_PAUSE      &kp DEL    &kp M            &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &mt LEFT_ALT I  &mt LEFT_CONTROL O
 &kp Z               &kp X           &kp C               &kp D             &kp V        &caps_word            &kp TAB    &kp K            &kp H             &lt 5 COMMA         &kp DOT         &kp SLASH
-&none               &none           &none               &kp LEFT_SHIFT    &lt 2 SPACE  &lt 1 ESC             &kp ENTER  &lt 2 BACKSPACE                                                        &mo 3
+&none               &none           &none               &kp LEFT_SHIFT    &lt 2 SPACE  &lt 4 ESC             &kp ENTER  &lt 2 BACKSPACE                                                        &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
