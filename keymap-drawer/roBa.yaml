@@ -35,9 +35,9 @@ layers:
   - {t: ',', h: '5'}
   - .
   - /
-  - LEFT CONTROL
-  - LEFT ALT
-  - LEFT COMMAND
+  - ''
+  - ''
+  - ''
   - LEFT SHIFT
   - {t: SPACE, h: '2'}
   - {t: ESC, h: gaming}
