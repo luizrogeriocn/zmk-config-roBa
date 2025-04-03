@@ -207,9 +207,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mkp MB4'
   - '5'
-  - {t: ▽, type: trans}
+  - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -239,6 +239,9 @@ layers:
   - ''
   - ''
   - ''
+  - '&mkp LCLK'
+  - '&mkp MB3'
+  - '&mkp RCLK'
   - ''
   - ''
   - ''
@@ -248,12 +251,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&mkp MB4'
   - {type: held}
-  - ''
+  - '&mkp MB5'
   - ''
   - ''
   - ''
