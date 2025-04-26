@@ -57,7 +57,7 @@ layers:
   - F12
   - LEFT SHIFT
   - KP 4
-  - KP 5
+  - KP 2
   - KP 6
   - ''
   - PLAY PAUSE
@@ -81,8 +81,8 @@ layers:
   - F4
   - LEFT ALT
   - PRINTSCREEN
-  - ''
-  - ''
+  - '&mkp LCLK'
+  - '&mkp RCLK'
   - SPACE
   - ''
   - ''
