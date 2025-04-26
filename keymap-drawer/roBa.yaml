@@ -69,7 +69,7 @@ layers:
   - F8
   - LEFT CONTROL
   - KP 1
-  - KP 2
+  - '4'
   - KP 3
   - ''
   - ''
@@ -81,8 +81,8 @@ layers:
   - F4
   - LEFT ALT
   - PRINTSCREEN
-  - '&mkp LCLK'
-  - '&mkp RCLK'
+  - ''
+  - ''
   - SPACE
   - ''
   - ''
