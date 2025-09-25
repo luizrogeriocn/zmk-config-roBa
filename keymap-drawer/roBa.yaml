@@ -10,7 +10,7 @@ layers:
   - L
   - U
   - Y
-  - ;
+  - ''''
   - {t: A, h: LEFT CONTROL}
   - {t: R, h: LEFT ALT}
   - {t: S, h: LEFT COMMAND}
@@ -28,21 +28,21 @@ layers:
   - C
   - D
   - V
-  - '&caps_word'
   - TAB
+  - BACKSPACE
   - K
   - H
-  - {t: ',', h: '5'}
-  - .
-  - /
-  - {t: ., s: ':'}
   - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: '?', s: '!'}
   - ''
-  - LEFT SHIFT
+  - ''
+  - ''
+  - {t: ESC, h: '5'}
   - {t: SPACE, h: '2'}
-  - {t: ESC, h: '4'}
+  - LSHIFT
   - ENTER
-  - {t: BACKSPACE, h: '2'}
+  - '2'
   - keebconfig
   gaming:
   - ESCAPE
@@ -110,19 +110,19 @@ layers:
   - '4'
   - '5'
   - '6'
-  - .
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - '0'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ','
   - '1'
   - '2'
   - '3'
-  - ','
+  - .
   - ''
   - ''
   - ''
@@ -201,7 +201,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -216,7 +216,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -252,13 +252,13 @@ layers:
   - ''
   - ''
   - '&mkp MB4'
-  - {type: held}
+  - ''
   - '&mkp MB5'
   - ''
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
