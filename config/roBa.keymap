@@ -108,14 +108,14 @@
 
         Grave {
             bindings = <&kp GRAVE>;
-            key-positions = <20 8>;
+            key-positions = <10 0>;
             layers = <0>;
             require-prior-idle-ms = <175>;
         };
 
-        exclamation {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <0 10>;
+        forward_slash {
+            bindings = <&kp SLASH>;
+            key-positions = <20 8>;
             layers = <0>;
         };
 
@@ -185,8 +185,8 @@
             layers = <0>;
         };
 
-        backslash {
-            bindings = <&kp BACKSLASH>;
+        pipe {
+            bindings = <&kp PIPE>;
             key-positions = <31 19>;
             layers = <0>;
         };
@@ -255,8 +255,8 @@
             layers = <0>;
         };
 
-        slash {
-            bindings = <&kp SLASH>;
+        backslash {
+            bindings = <&kp BACKSLASH>;
             key-positions = <18 6>;
             require-prior-idle-ms = <175>;
             layers = <0>;
