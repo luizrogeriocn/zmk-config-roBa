@@ -39,7 +39,7 @@ layers:
   - ''
   - ''
   - {t: ESC, h: '5'}
-  - {t: SPACE, h: '2'}
+  - SPACE
   - LSHIFT
   - ENTER
   - '2'
@@ -127,10 +127,10 @@ layers:
   - ''
   - ''
   - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - ''
-  - ''
-  - ''
   - ''
   keebconfig:
   - ''
