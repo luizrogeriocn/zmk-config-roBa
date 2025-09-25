@@ -69,6 +69,39 @@
     };
 };
 
+/* Mod Morphs (changes to 'shift + key' behavior). */
+
+/ {
+    behaviors {
+        dot_colon: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_COLON";
+            bindings = <&kp PERIOD>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        semi_comma: semi_comma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SEMI_COMMA";
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        question_exclamation: question_exclamation {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUESTION_EXCLAMATION";
+            bindings = <&kp QMARK>, <&kp EXCL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -177,6 +210,12 @@
             layers = <0>;
         };
 
+        lesser_than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <30 18>;
+            layers = <0>;
+        };
+
         greater_than {
             bindings = <&kp GREATER_THAN>;
             key-positions = <32 20>;
@@ -221,57 +260,6 @@
             bindings = <&tog 1>;
             key-positions = <28 16>;
             layers = <0>;
-        };
-
-        lesser_than {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <30 18>;
-            layers = <0>;
-        };
-    };
-
-    macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
-
-        outputmacro: outputmacro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp Z &kp X &kp C &kp V &kp FSLH &kp DOT &kp COMMA &kp M>;
-            label = "OUTPUTMACRO";
-        };
-    };
-
-    behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        dot_colon: dot_colon {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOT_COLON";
-            bindings = <&kp PERIOD>, <&kp COLON>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        semi_comma: semi_comma {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SEMI_COMMA";
-            bindings = <&kp COMMA>, <&kp SEMICOLON>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
         };
     };
 
