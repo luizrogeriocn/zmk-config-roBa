@@ -268,10 +268,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W           &kp F               &kp P             &kp B                                             &kp J  &kp L             &kp U               &kp Y           &kp SINGLE_QUOTE
-&mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G        &kp C_PLAY_PAUSE      &kp DEL        &kp M  &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &mt LEFT_ALT I  &mt LEFT_CONTROL O
-&kp Z               &kp X           &kp C               &kp D             &kp V        &kp TAB               &kp BACKSPACE  &kp K  &kp H             &semi_comma         &dot_colon      &question_exclamation
-&none               &none           &none               &lt 5 ESC         &lt 2 SPACE  &kp LSHIFT            &kp ENTER      &mo 2                                                        &mo 3
+&kp Q               &kp W           &kp F               &kp P             &kp B                                           &kp J  &kp L             &kp U               &kp Y           &kp SINGLE_QUOTE
+&mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G      &kp C_PLAY_PAUSE      &kp DEL        &kp M  &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &mt LEFT_ALT I  &mt LEFT_CONTROL O
+&kp Z               &kp X           &kp C               &kp D             &kp V      &kp TAB               &kp BACKSPACE  &kp K  &kp H             &semi_comma         &dot_colon      &question_exclamation
+&none               &none           &none               &lt 5 ESC         &kp SPACE  &kp LSHIFT            &kp ENTER      &mo 2                                                        &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
