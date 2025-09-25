@@ -106,16 +106,9 @@
     combos {
         compatible = "zmk,combos";
 
-        Quote {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <8 9>;
-            layers = <0>;
-            require-prior-idle-ms = <175>;
-        };
-
         Grave {
             bindings = <&kp GRAVE>;
-            key-positions = <1 0>;
+            key-positions = <20 8>;
             layers = <0>;
             require-prior-idle-ms = <175>;
         };
@@ -259,6 +252,13 @@
         qwerty {
             bindings = <&tog 1>;
             key-positions = <28 16>;
+            layers = <0>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <18 6>;
+            require-prior-idle-ms = <175>;
             layers = <0>;
         };
     };
