@@ -255,8 +255,8 @@
             layers = <0>;
         };
 
-        pipe {
-            bindings = <&kp PIPE>;
+        slash {
+            bindings = <&kp SLASH>;
             key-positions = <18 6>;
             require-prior-idle-ms = <175>;
             layers = <0>;
