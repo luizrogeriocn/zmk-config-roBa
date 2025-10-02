@@ -336,7 +336,7 @@ combos:
   l: [default]
 - p: [28, 16]
   k: {t: gaming, h: toggle}
-  l: [default]
+  l: [default, gaming]
 - p: [18, 6]
   k: \
   l: [default]

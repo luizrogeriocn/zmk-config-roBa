@@ -605,6 +605,12 @@ path.combo {
 <text x="0" y="0" class="key tap layer-activator">default</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="434" y="127" width="28" height="26" class="combo"/>
+<a href="#gaming">
+<text x="448" y="140" class="combo tap layer-activator">gaming</text>
+</a><text x="448" y="151" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 678)" class="layer-2">
