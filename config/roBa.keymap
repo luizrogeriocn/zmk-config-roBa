@@ -165,12 +165,14 @@
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <1 2>;
             layers = <0>;
+            require-prior-idle-ms = <175>;
         };
 
         Rparen {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <2 3>;
             layers = <0>;
+            require-prior-idle-ms = <175>;
         };
 
         minus {
@@ -195,12 +197,14 @@
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <6 7>;
             layers = <0>;
+            require-prior-idle-ms = <175>;
         };
 
         Rbracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <7 8>;
             layers = <0>;
+            require-prior-idle-ms = <175>;
         };
 
         lesser_than {
@@ -249,16 +253,15 @@
             require-prior-idle-ms = <175>;
         };
 
-        qwerty {
+        gaming {
             bindings = <&tog 1>;
             key-positions = <28 16>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <18 6>;
-            require-prior-idle-ms = <175>;
             layers = <0>;
         };
     };
