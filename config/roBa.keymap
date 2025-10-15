@@ -109,148 +109,144 @@
         Grave {
             bindings = <&kp GRAVE>;
             key-positions = <10 0>;
-            layers = <0>;
-            require-prior-idle-ms = <175>;
+            layers = <0 2>;
         };
 
         forward_slash {
             bindings = <&kp SLASH>;
             key-positions = <20 8>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         at {
             bindings = <&kp AT>;
             key-positions = <11 1>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         hash {
             bindings = <&kp HASH>;
             key-positions = <12 2>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <3 13>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         percent {
             bindings = <&kp PERCENT>;
             key-positions = <4 14>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         caret {
             bindings = <&kp CARET>;
             key-positions = <10 22>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         ampersand {
             bindings = <&kp AMPERSAND>;
             key-positions = <23 11>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         asterisk {
             bindings = <&kp ASTERISK>;
             key-positions = <24 12>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         Lparen {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <1 2>;
-            layers = <0>;
+            layers = <0 2>;
             require-prior-idle-ms = <175>;
         };
 
         Rparen {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <2 3>;
-            layers = <0>;
+            layers = <0 2>;
             require-prior-idle-ms = <175>;
         };
 
         minus {
             bindings = <&kp MINUS>;
             key-positions = <25 13>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         underline {
             bindings = <&kp UNDERSCORE>;
             key-positions = <19 7>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         pipe {
             bindings = <&kp PIPE>;
             key-positions = <31 19>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         Lbracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <6 7>;
-            layers = <0>;
+            layers = <0 2>;
             require-prior-idle-ms = <175>;
         };
 
         Rbracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <7 8>;
-            layers = <0>;
+            layers = <0 2>;
             require-prior-idle-ms = <175>;
         };
 
         lesser_than {
             bindings = <&kp LESS_THAN>;
             key-positions = <30 18>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         greater_than {
             bindings = <&kp GREATER_THAN>;
             key-positions = <32 20>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         equal {
             bindings = <&kp EQUAL>;
             key-positions = <26 14>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <23 24>;
-            layers = <0>;
-            require-prior-idle-ms = <175>;
+            layers = <0 2>;
         };
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <24 25>;
-            layers = <0>;
-            require-prior-idle-ms = <175>;
+            key-positions = <22 23>;
+            layers = <0 2>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <30 31>;
-            layers = <0>;
-            require-prior-idle-ms = <175>;
+            layers = <0 2>;
         };
 
         bkspc {
             bindings = <&kp BACKSPACE>;
             key-positions = <32 31>;
-            layers = <0>;
-            require-prior-idle-ms = <175>;
+            layers = <0 2>;
+            require-prior-idle-ms = <75>;
         };
 
         gaming {
@@ -262,7 +258,7 @@
         backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <18 6>;
-            layers = <0>;
+            layers = <0 2>;
         };
     };
 
@@ -271,13 +267,13 @@
 
         base_colemak_dh {
             bindings = <
-&kp Q               &kp W           &kp F               &kp P             &kp B                                           &kp J  &kp L             &kp U               &kp Y           &kp SINGLE_QUOTE
-&mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G      &kp C_PLAY_PAUSE      &kp DEL        &kp M  &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &mt LEFT_ALT I  &mt LEFT_CONTROL O
-&kp Z               &kp X           &kp C               &kp D             &kp V      &kp TAB               &kp BACKSPACE  &kp K  &kp H             &semi_comma         &dot_colon      &question_exclamation
-&mkp MB1            &mkp MB3        &mkp MB2            &lt 5 ESCAPE      &kp SPACE  &kp LSHIFT            &kp ENTER      &mo 2                                                        &mo 3
+&kp Q               &kp W           &kp F               &kp P             &kp B                                          &kp J  &kp L             &kp U               &kp Y           &kp SINGLE_QUOTE
+&mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G      &kp PRINTSCREEN      &kp DEL        &kp M  &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &mt LEFT_ALT I  &mt LEFT_CONTROL O
+&kp Z               &kp X           &kp C               &kp D             &kp V      &kp TAB              &kp BACKSPACE  &kp K  &kp H             &semi_comma         &dot_colon      &question_exclamation
+&none               &none           &none               &lt 5 ESCAPE      &kp SPACE  &kp LSHIFT           &kp ENTER      &mo 2                                                        &mo 3
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         gaming {
@@ -293,10 +289,10 @@
 
         numbers_navigation {
             bindings = <
-&none              &kp HOME    &kp UP_ARROW     &kp END     &kp PAGE_UP                      &none           &kp N7        &kp N8        &kp N9        &kp COLON
-&none              &kp LEFT    &kp DOWN_ARROW   &kp RIGHT   &kp PAGE_DOWN  &none      &none  &kp UNDERSCORE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_0
-&none              &kp C_PREV  &kp C_PLAY       &kp C_NEXT  &none          &none      &none  &kp COMMA       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT
-&kp C_VOLUME_DOWN  &kp K_MUTE  &kp C_VOLUME_UP  &none       &kp SPACE      &none      &none  &none                                                     &none
+&kp C_VOLUME_UP    &kp HOME    &kp UP_ARROW    &kp END     &kp PAGE_UP                      &none           &kp N7        &kp N8        &kp N9        &kp COLON
+&kp K_MUTE         &kp LEFT    &kp DOWN_ARROW  &kp RIGHT   &kp PAGE_DOWN  &none      &none  &kp UNDERSCORE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_0
+&kp C_VOLUME_DOWN  &kp C_PREV  &kp C_PLAY      &kp C_NEXT  &none          &none      &none  &kp COMMA       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT
+&none              &none       &none           &none       &kp SPACE      &none      &none  &none                                                     &none
             >;
         };
 
