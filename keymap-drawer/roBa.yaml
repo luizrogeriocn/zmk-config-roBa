@@ -28,8 +28,8 @@ layers:
   - C
   - D
   - V
-  - TAB
-  - BACKSPACE
+  - ESC
+  - ENTER
   - K
   - H
   - {t: ',', s: ;}
@@ -38,7 +38,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ESCAPE, h: '5'}
+  - {t: TAB, h: '5'}
   - SPACE
   - LSHIFT
   - LEFT SHIFT
