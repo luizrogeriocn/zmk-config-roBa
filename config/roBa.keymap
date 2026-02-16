@@ -106,8 +106,8 @@
     combos {
         compatible = "zmk,combos";
 
-        Grave {
-            bindings = <&kp GRAVE>;
+        exclamation {
+            bindings = <&kp EXCLAMATION>;
             key-positions = <10 0>;
             layers = <0 2>;
         };
@@ -174,14 +174,14 @@
             require-prior-idle-ms = <175>;
         };
 
-        minus {
-            bindings = <&kp MINUS>;
+        Lbracket {
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <25 13>;
             layers = <0 2>;
         };
 
-        underline {
-            bindings = <&kp UNDERSCORE>;
+        minus {
+            bindings = <&kp MINUS>;
             key-positions = <19 7>;
             layers = <0 2>;
         };
@@ -190,20 +190,6 @@
             bindings = <&kp EQUAL>;
             key-positions = <31 19>;
             layers = <0 2>;
-        };
-
-        Lbracket {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <6 7>;
-            layers = <0 2>;
-            require-prior-idle-ms = <175>;
-        };
-
-        Rbracket {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <7 8>;
-            layers = <0 2>;
-            require-prior-idle-ms = <175>;
         };
 
         lesser_than {
@@ -218,8 +204,8 @@
             layers = <0 2>;
         };
 
-        plus {
-            bindings = <&kp PLUS>;
+        Rbracket {
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <26 14>;
             layers = <0 2>;
         };
@@ -260,16 +246,6 @@
             key-positions = <18 6>;
             layers = <0 2>;
         };
-
-        pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <33 21>;
-        };
-
-        double_quote {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <9 21>;
-        };
     };
 
     keymap {
@@ -277,10 +253,10 @@
 
         base_colemak_dh {
             bindings = <
-&kp Q               &kp W           &kp F               &kp P             &kp B                                     &kp J  &kp L             &kp U               &kp Y           &kp SINGLE_QUOTE
-&mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G      &mkp MCLK       &kp DELETE     &kp M  &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &mt LEFT_ALT I  &mt LEFT_CONTROL O
-&kp Z               &kp X           &kp C               &kp D             &kp V      &kp TAB         &kp BACKSPACE  &kp K  &kp H             &semi_comma         &dot_colon      &question_exclamation
-&none               &none           &none               &lt 5 ESCAPE      &kp SPACE  &kp LSHIFT      &kp ENTER      &mo 2                                                        &mo 3
+&kp Q               &kp W           &kp F               &kp P             &kp B                                      &kp J  &kp L             &kp U               &kp Y           &kp SINGLE_QUOTE
+&mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G      &mkp MCLK       &kp DELETE      &kp M  &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &mt LEFT_ALT I  &mt LEFT_CONTROL O
+&kp Z               &kp X           &kp C               &kp D             &kp V      &kp TAB         &kp BACKSPACE   &kp K  &kp H             &semi_comma         &dot_colon      &kp GRAVE
+&none               &none           &none               &lt 5 ESCAPE      &kp SPACE  &kp LSHIFT      &kp LEFT_SHIFT  &mo 2                                                        &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
