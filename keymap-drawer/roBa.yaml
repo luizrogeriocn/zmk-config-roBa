@@ -34,14 +34,14 @@ layers:
   - H
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - {t: '?', s: '!'}
+  - '`'
   - ''
   - ''
   - ''
   - {t: ESCAPE, h: '5'}
   - SPACE
   - LSHIFT
-  - ENTER
+  - LEFT SHIFT
   - numbers_navigation
   - keebconfig
   gaming:
@@ -266,7 +266,7 @@ layers:
   - ''
 combos:
 - p: [10, 0]
-  k: '`'
+  k: '!'
   l: [base_colemak_dh, numbers_navigation]
 - p: [20, 8]
   k: /
@@ -299,19 +299,13 @@ combos:
   k: )
   l: [base_colemak_dh, numbers_navigation]
 - p: [25, 13]
-  k: '-'
+  k: '['
   l: [base_colemak_dh, numbers_navigation]
 - p: [19, 7]
-  k: _
+  k: '-'
   l: [base_colemak_dh, numbers_navigation]
 - p: [31, 19]
   k: '='
-  l: [base_colemak_dh, numbers_navigation]
-- p: [6, 7]
-  k: '['
-  l: [base_colemak_dh, numbers_navigation]
-- p: [7, 8]
-  k: ']'
   l: [base_colemak_dh, numbers_navigation]
 - p: [30, 18]
   k: <
@@ -320,7 +314,7 @@ combos:
   k: '>'
   l: [base_colemak_dh, numbers_navigation]
 - p: [26, 14]
-  k: +
+  k: ']'
   l: [base_colemak_dh, numbers_navigation]
 - p: [23, 24]
   k: TAB
@@ -340,7 +334,3 @@ combos:
 - p: [18, 6]
   k: \
   l: [base_colemak_dh, numbers_navigation]
-- p: [33, 21]
-  k: '|'
-- p: [9, 21]
-  k: '"'
