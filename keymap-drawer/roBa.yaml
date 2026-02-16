@@ -281,7 +281,7 @@ combos:
   k: $
   l: [base_colemak_dh, numbers_navigation]
 - p: [4, 14]
-  k: BACKSPACE
+  k: '['
   l: [base_colemak_dh, numbers_navigation]
 - p: [10, 22]
   k: '%'
