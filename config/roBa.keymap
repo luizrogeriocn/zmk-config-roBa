@@ -255,8 +255,8 @@
             bindings = <
 &kp Q               &kp W           &kp F               &kp P             &kp B                                      &kp J  &kp L             &kp U               &kp Y           &kp SINGLE_QUOTE
 &mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G      &mkp MCLK       &kp DELETE      &kp M  &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &mt LEFT_ALT I  &mt LEFT_CONTROL O
-&kp Z               &kp X           &kp C               &kp D             &kp V      &kp TAB         &kp BACKSPACE   &kp K  &kp H             &semi_comma         &dot_colon      &kp GRAVE
-&none               &none           &none               &lt 5 ESCAPE      &kp SPACE  &kp LSHIFT      &kp LEFT_SHIFT  &mo 2                                                        &mo 3
+&kp Z               &kp X           &kp C               &kp D             &kp V      &kp ESC         &kp ENTER       &kp K  &kp H             &semi_comma         &dot_colon      &kp GRAVE
+&none               &none           &none               &lt 5 TAB         &kp SPACE  &kp LSHIFT      &kp LEFT_SHIFT  &mo 2                                                        &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
