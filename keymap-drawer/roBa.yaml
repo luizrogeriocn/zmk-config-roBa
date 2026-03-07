@@ -28,19 +28,19 @@ layers:
   - C
   - D
   - V
-  - ESC
+  - '`'
   - ENTER
   - K
   - H
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - '`'
+  - {t: /, h: '5'}
   - ''
   - ''
   - ''
-  - {t: TAB, h: '5'}
+  - {t: ESCAPE, h: LEFT CONTROL}
   - SPACE
-  - LSHIFT
+  - LEFT COMMAND
   - LEFT SHIFT
   - numbers_navigation
   - keebconfig
@@ -107,10 +107,10 @@ layers:
   - ''
   - ''
   - _
-  - '4'
-  - '5'
-  - '6'
-  - '0'
+  - {t: '4', h: LEFT SHIFT}
+  - {t: '5', h: LEFT COMMAND}
+  - {t: '6', h: LEFT ALT}
+  - {t: '0', h: LCTRL}
   - MUTE
   - PREV
   - PLAY
@@ -254,11 +254,11 @@ layers:
   - '&mkp MB4'
   - ''
   - '&mkp MB5'
-  - ''
-  - ''
-  - ''
-  - ''
   - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
