@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -8,7 +7,6 @@
 #define KEYS_L 0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27
 #define KEYS_R 5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33
 #define THUMBS 34 35 36 37 38 39 40 41
-
 #define DEFAULT 0
 #define GAME 1
 #define NUM_NAV 2
@@ -16,7 +14,6 @@
 #define MOUSE 4
 #define SCROLL 5
 #define QWERTY 6
-
 #define COMBO_TERM 30
 #define TAPPING_TERM 280
 #define QUICK_TAP_TERM 175
@@ -268,10 +265,10 @@
 
         default_layer {
             bindings = <
-&kp Q                 &kp W                &kp F                &kp P                 &kp B                     &kp J        &kp L               &kp U                &kp Y               &kp APOS
-&hrml LCTRL A         &hrml LALT R         &hrml LGUI S          &hrml LSHFT T          &kp G    &none      &none      &kp M        &hrmr LSHFT N       &hrmr LGUI E          &hrmr LALT I      &hrmr LCTRL O
-&kp Z                 &kp X                &kp C                &kp D                 &kp V    &none      &none      &kp K        &kp H               &comma_semi          &dot_colon         &qmrk_excl
-&lt FUN ESCAPE         &none                &none                &none                 &lt SCROLL SPACE &kp LEFT_COMMAND  &smart_shft  &mo NUM_NAV                                              &none
+&kp Q          &kp W         &kp F         &kp P          &kp B                                                &kp J        &kp L          &kp U         &kp Y         &kp APOS
+&hrml LCTRL A  &hrml LALT R  &hrml LGUI S  &hrml LSHFT T  &kp G             &none                 &none        &kp M        &hrmr LSHFT N  &hrmr LGUI E  &hrmr LALT I  &hrmr LCTRL O
+&kp Z          &kp X         &kp C         &kp D          &kp V             &none                 &none        &kp K        &kp H          &comma_semi   &dot_colon    &qmrk_excl
+&none          &none         &none         &lt 3 ESCAPE   &lt SCROLL SPACE  &kp LEFT_COMMAND      &smart_shft  &mo NUM_NAV                                             &none
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
@@ -279,10 +276,10 @@
 
         game_layer {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E  &kp R            &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F  &none  &none     &trans  &trans  &trans  &trans  &trans
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C  &kp V  &none  &none     &trans  &trans  &trans  &trans  &trans
-&kp ESCAPE      &none  &none  &none  &trans &kp SPACE &trans  &trans                                              &to DEFAULT
+&kp TAB           &kp Q  &kp W  &kp E  &kp R                          &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D  &kp F   &none          &none   &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C  &kp V   &none          &none   &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE        &none  &none  &none  &trans  &kp SPACE      &trans  &trans                          &to DEFAULT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -290,19 +287,19 @@
 
         num_nav_layer {
             bindings = <
-&kp PG_UP                  &kp HOME                 &kp UP_ARROW                &kp END                    &trans                     &trans   &kp N7                  &kp N8                    &kp N9                   &trans
-&hrml LCTRL PG_DN         &hrml LALT LEFT          &hrml LGUI DOWN_ARROW         &hrml LSHFT RIGHT          &trans   &none      &none      &hmr LSHFT N4           &hmr LGUI N5            &hmr LALT N6            &hmr LCTRL N0
-&kp ESCAPE                 &kp TAB                  &kp ENTER                   &bspc_del                  &trans   &none      &none      &kp N1                  &kp N2                   &kp N3                   &trans
-&trans                     &none                    &none                       &none                      &trans   &trans     &trans     &trans                                                  &none
+&kp PG_UP      &kp HOME  &kp UP_ARROW  &kp END    &none                      &none  &kp N7        &kp N8        &kp N9        &none
+&kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &none   &none       &none  &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
+&kp ESCAPE     &kp TAB   &kp ENTER     &bspc_del  &none   &none       &none  &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
+&none          &none     &none         &trans     &trans  &trans      &none
             >;
         };
 
         fun_layer {
             bindings = <
-&kp PRINTSCREEN  &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_USB       &to GAME  &kp F9  &kp F10  &kp F11  &kp F12
-&bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &none     &to DEFAULT  &kp F5   &kp F6   &kp F7   &kp F8
-&bt BT_CLR       &kp C_PREV    &kp C_PP      &kp C_NEXT    &out OUT_BLE  &none  &none     &to QWERTY   &kp F1   &kp F2   &kp F3   &kp F4
-&trans           &none         &none         &none         &trans         &trans &trans    &trans                                             &none
+&kp PRINTSCREEN  &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_USB                      &to GAME     &kp F9  &kp F10  &kp F11  &kp F12
+&bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none       &none   &to DEFAULT  &kp F5  &kp F6   &kp F7   &kp F8
+&bt BT_CLR       &kp C_PREV    &kp C_PP      &kp C_NEXT    &out OUT_BLE  &none       &none   &to QWERTY   &kp F1  &kp F2   &kp F3   &kp F4
+&none            &none         &none         &none         &trans        &trans      &trans  &trans                                 &none
             >;
         };
 
@@ -326,10 +323,10 @@
 
         qwerty_layer {
             bindings = <
-&kp Q                 &kp W                &kp E                &kp R                 &kp T                     &kp Y        &kp U               &kp I                &kp O               &kp P
-&hrml LCTRL A         &hrml LALT S         &hrml LGUI D          &hrml LSHFT F          &kp G    &none      &none      &kp H        &hmr LSHFT J       &hmr LGUI K          &hmr LALT L      &hmr LCTRL APOS
-&kp Z                 &kp X                &kp C                &kp V                 &kp B    &none      &none      &kp N        &kp M               &comma_semi          &dot_colon         &qmrk_excl
-&lt FUN ESCAPE         &none                &none                &none                 &lt SCROLL SPACE &to DEFAULT       &smart_shft  &mo NUM_NAV                                              &none
+&kp Q           &kp W         &kp E         &kp R          &kp T                                           &kp Y        &kp U         &kp I        &kp O        &kp P
+&hrml LCTRL A   &hrml LALT S  &hrml LGUI D  &hrml LSHFT F  &kp G             &none            &none        &kp H        &hmr LSHFT J  &hmr LGUI K  &hmr LALT L  &hmr LCTRL APOS
+&kp Z           &kp X         &kp C         &kp V          &kp B             &none            &none        &kp N        &kp M         &comma_semi  &dot_colon   &qmrk_excl
+&lt FUN ESCAPE  &none         &none         &none          &lt SCROLL SPACE  &to DEFAULT      &smart_shft  &mo NUM_NAV                                          &none
             >;
         };
     };
