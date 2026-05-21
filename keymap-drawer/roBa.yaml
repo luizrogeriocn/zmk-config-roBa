@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: roBa}
 layers:
-  default_layer:
+  default:
   - Q
   - W
   - F
@@ -10,19 +10,19 @@ layers:
   - L
   - U
   - Y
-  - {t: '''', s: '"'}
-  - {t: A, h: ⌃}
-  - {t: R, h: ⎇}
-  - {t: S, h: ⌘}
-  - {t: T, h: ⇧}
+  - ''''
+  - {t: A, h: LCTRL}
+  - {t: R, h: LALT}
+  - {t: S, h: LGUI}
+  - {t: T, h: LSHFT}
   - G
   - ''
   - ''
   - M
-  - {t: N, h: ⇧}
-  - {t: E, h: ⌘}
-  - {t: I, h: ⎇}
-  - {t: O, h: ⌃}
+  - {t: N, h: LSHFT}
+  - {t: E, h: LGUI}
+  - {t: I, h: LALT}
+  - {t: O, h: LCTRL}
   - Z
   - X
   - C
@@ -35,17 +35,17 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - {t: ⎋, h: fun_layer}
   - ''
   - ''
   - ''
-  - {t: ⎵, h: SCROLL}
-  - ⌘
-  - {t: ⇧, s: ⇪}
-  - num_nav_layer
+  - {t: ESCAPE, h: fun}
+  - {t: SPACE, h: '5'}
+  - LEFT COMMAND
+  - {t: LEFT SHIFT, s: '&caps_word'}
+  - num_nav
   - ''
-  game_layer:
-  - ↹
+  game:
+  - TAB
   - Q
   - W
   - E
@@ -55,7 +55,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ⇧
+  - LEFT SHIFT
   - A
   - S
   - D
@@ -67,7 +67,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ⌃
+  - LEFT CONTROL
   - Z
   - X
   - C
@@ -79,50 +79,50 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ESC
+  - ESCAPE
   - ''
   - ''
   - ''
   - {t: ▽, type: trans}
-  - ⎵
+  - SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: default_layer, h: toggle}
-  num_nav_layer:
+  - {t: default, h: toggle}
+  num_nav:
   - PG UP
   - HOME
-  - ↑
+  - UP ARROW
   - END
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - '7'
   - '8'
   - '9'
-  - {t: ▽, type: trans}
-  - {t: PG DN, h: ⌃}
-  - {t: ←, h: ⎇}
-  - {t: ↓, h: ⌘}
-  - {t: →, h: ⇧}
-  - {t: ▽, type: trans}
+  - ''
+  - PAGE DOWN
+  - LEFT
+  - DOWN
+  - RIGHT
   - ''
   - ''
-  - {t: '4', h: ⇧}
-  - {t: '5', h: ⌘}
-  - {t: '6', h: ⎇}
-  - {t: '0', h: ⌃}
-  - ⎋
-  - ↹
-  - ⏎
-  - {t: ⌫, s: ⌦}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - ESCAPE
+  - TAB
+  - ENTER
+  - {t: BACKSPACE, s: DELETE}
+  - ''
+  - ''
   - ''
   - ''
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - ''
   - ''
   - ''
@@ -132,13 +132,13 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - ''
-  fun_layer:
+  fun:
   - PRINTSCREEN
   - MUTE
   - VOL DN
   - VOL UP
   - OUT USB
-  - {t: game_layer, h: toggle}
+  - {t: game, h: toggle}
   - F9
   - F10
   - F11
@@ -150,15 +150,15 @@ layers:
   - {t: BT, h: '4'}
   - ''
   - ''
-  - {t: default_layer, h: toggle}
+  - {t: default, h: toggle}
   - F5
   - F6
   - F7
   - F8
   - BT CLR
-  - ⏮
-  - ⏯
-  - ⏭
+  - PREV
+  - PP
+  - NEXT
   - OUT BLE
   - ''
   - ''
@@ -167,16 +167,16 @@ layers:
   - F2
   - F3
   - F4
-  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  MOUSE:
+  '4':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -208,7 +208,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB4'
-  - SCROLL
+  - '5'
   - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -220,7 +220,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SCROLL:
+  '5':
   - ''
   - ''
   - ''
@@ -254,12 +254,12 @@ layers:
   - '&mkp MB4'
   - ''
   - '&mkp MB5'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - ''
   - ''
   - ''
@@ -267,86 +267,70 @@ layers:
 combos:
 - p: [0, 10]
   k: '~'
-  l: [default_layer]
+  l: [default]
 - p: [11, 1]
   k: '@'
-  l: [default_layer]
+  l: [default]
 - p: [12, 2]
   k: '#'
-  l: [default_layer]
+  l: [default]
 - p: [13, 3]
   k: $
-  l: [default_layer]
+  l: [default]
 - p: [10, 22]
   k: '%'
-  l: [default_layer]
-  a: bottom
-  o: -0.14
+  l: [default]
 - p: [11, 23]
   k: ^
-  l: [default_layer]
-  a: bottom
-  o: -0.14
+  l: [default]
 - p: [24, 12]
   k: {t: '&', s: '|'}
-  l: [default_layer]
-  a: bottom
-  o: -0.14
+  l: [default]
 - p: [13, 25]
   k: '*'
-  l: [default_layer]
-  a: bottom
-  o: -0.14
+  l: [default]
 - p: [14, 4]
   k: '['
-  l: [default_layer]
+  l: [default]
 - p: [26, 14]
   k: (
-  l: [default_layer]
+  l: [default]
 - p: [17, 5]
   k: ']'
-  l: [default_layer]
+  l: [default]
 - p: [29, 17]
   k: )
-  l: [default_layer]
+  l: [default]
 - p: [21, 33]
-  k: {t: '`', s: '~'}
-  l: [default_layer]
-  a: bottom
-  o: -0.14
+  k: '`'
+  l: [default]
 - p: [30, 18]
   k: <
-  l: [default_layer]
-  a: bottom
-  o: -0.14
+  l: [default]
 - p: [32, 20]
   k: '>'
-  l: [default_layer]
-  a: bottom
-  o: -0.14
+  l: [default]
 - p: [8, 20]
   k: {t: /, s: \}
-  l: [default_layer]
+  l: [default]
 - p: [18, 6]
-  k: {t: '-', s: _}
-  l: [default_layer]
+  k: '-'
+  l: [default]
 - p: [19, 7]
   k: _
-  l: [default_layer]
+  l: [default]
 - p: [31, 19]
-  k: {t: '=', s: +}
-  l: [default_layer]
-  a: bottom
-  o: -0.14
+  k: '='
+  l: [default]
 - p: [9, 21]
   k: +
-  l: [default_layer]
+  l: [default]
 - p: [23, 24]
-  k: ↹
-  l: [default_layer]
+  k: TAB
+  l: [default]
 - p: [31, 30]
-  k: ⏎
-  l: [default_layer]
+  k: ENTER
+  l: [default]
 - p: [32, 31]
-  k: {t: ⌫, s: ⌦}
-  l: [default_layer]
+  k: {t: BACKSPACE, s: DELETE}
+  l: [default]
