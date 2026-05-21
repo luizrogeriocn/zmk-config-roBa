@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: roBa}
 layers:
-  base_colemak_dh:
+  default_layer:
   - Q
   - W
   - F
@@ -10,68 +10,156 @@ layers:
   - L
   - U
   - Y
-  - ''''
-  - {t: A, h: LEFT CONTROL}
-  - {t: R, h: LEFT ALT}
-  - {t: S, h: LEFT COMMAND}
-  - {t: T, h: LEFT SHIFT}
+  - {t: '''', s: '"'}
+  - {t: A, h: ⌃}
+  - {t: R, h: ⎇}
+  - {t: S, h: ⌘}
+  - {t: T, h: ⇧}
   - G
-  - '&mkp MCLK'
-  - DELETE
+  - ''
+  - ''
   - M
-  - {t: N, h: LEFT SHIFT}
-  - {t: E, h: LEFT COMMAND}
-  - {t: I, h: LEFT ALT}
-  - {t: O, h: LEFT CONTROL}
+  - {t: N, h: ⇧}
+  - {t: E, h: ⌘}
+  - {t: I, h: ⎇}
+  - {t: O, h: ⌃}
   - Z
   - X
   - C
   - D
   - V
-  - '`'
-  - ENTER
+  - ''
+  - ''
   - K
   - H
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - {t: /, h: '5'}
+  - {t: '?', s: '!'}
+  - {t: ⎋, h: fun_layer}
   - ''
   - ''
   - ''
-  - {t: ESCAPE, h: LEFT CONTROL}
-  - SPACE
-  - LEFT COMMAND
-  - LEFT SHIFT
-  - numbers_navigation
-  - keebconfig
-  gaming:
-  - ESCAPE
-  - KP 7
-  - KP 8
-  - KP 9
+  - {t: ⎵, h: SCROLL}
+  - ⌘
+  - {t: ⇧, s: ⇪}
+  - num_nav_layer
+  - ''
+  game_layer:
+  - ↹
+  - Q
+  - W
+  - E
+  - R
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ⇧
+  - A
+  - S
+  - D
+  - F
   - ''
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ⌃
+  - Z
+  - X
+  - C
+  - V
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ESC
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ⎵
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: default_layer, h: toggle}
+  num_nav_layer:
+  - PG UP
+  - HOME
+  - ↑
+  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '7'
+  - '8'
+  - '9'
+  - {t: ▽, type: trans}
+  - {t: PG DN, h: ⌃}
+  - {t: ←, h: ⎇}
+  - {t: ↓, h: ⌘}
+  - {t: →, h: ⇧}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: '4', h: ⇧}
+  - {t: '5', h: ⌘}
+  - {t: '6', h: ⎇}
+  - {t: '0', h: ⌃}
+  - ⎋
+  - ↹
+  - ⏎
+  - {t: ⌫, s: ⌦}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ''
+  fun_layer:
+  - PRINTSCREEN
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - OUT USB
+  - {t: game_layer, h: toggle}
   - F9
   - F10
   - F11
   - F12
-  - LEFT SHIFT
-  - KP 4
-  - KP 2
-  - KP 6
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
   - ''
-  - PLAY PAUSE
   - ''
-  - ''
+  - {t: default_layer, h: toggle}
   - F5
   - F6
   - F7
   - F8
-  - LEFT CONTROL
-  - KP 1
-  - '4'
-  - KP 3
-  - ''
+  - BT CLR
+  - ⏮
+  - ⏯
+  - ⏭
+  - OUT BLE
   - ''
   - ''
   - ''
@@ -79,104 +167,16 @@ layers:
   - F2
   - F3
   - F4
-  - LEFT ALT
-  - PRINTSCREEN
-  - ''
-  - ''
-  - SPACE
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
-  - {t: base_colemak_dh, h: toggle}
-  numbers_navigation:
-  - VOLUME UP
-  - HOME
-  - UP ARROW
-  - END
-  - PAGE UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
-  - '7'
-  - '8'
-  - '9'
-  - ':'
-  - VOLUME DOWN
-  - LEFT
-  - DOWN ARROW
-  - RIGHT
-  - PAGE DOWN
-  - ''
-  - ''
-  - _
-  - {t: '4', h: LEFT SHIFT}
-  - {t: '5', h: LEFT COMMAND}
-  - {t: '6', h: LEFT ALT}
-  - {t: '0', h: LCTRL}
-  - MUTE
-  - PREV
-  - PLAY
-  - NEXT
-  - ''
-  - ''
-  - ''
-  - ','
-  - '1'
-  - '2'
-  - '3'
-  - .
-  - ''
-  - ''
-  - ''
-  - ''
-  - SPACE
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  keebconfig:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&bl BL_ON'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - BT CLR ALL
-  - BT NXT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - BT CLR
-  - BT PRV
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - '&bootloader'
-  - '&bootloader'
-  - {t: base_colemak_dh, h: toggle}
-  - '&bootloader'
-  - '&bootloader'
-  - {type: held}
-  '4':
+  MOUSE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -201,14 +201,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB4'
-  - '5'
+  - SCROLL
   - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -220,7 +220,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '5':
+  SCROLL:
   - ''
   - ''
   - ''
@@ -265,70 +265,88 @@ layers:
   - ''
   - ''
 combos:
-- p: [10, 0]
-  k: '!'
-  l: [base_colemak_dh, numbers_navigation]
-- p: [20, 8]
-  k: /
-  l: [base_colemak_dh, numbers_navigation]
+- p: [0, 10]
+  k: '~'
+  l: [default_layer]
 - p: [11, 1]
   k: '@'
-  l: [base_colemak_dh, numbers_navigation]
+  l: [default_layer]
 - p: [12, 2]
   k: '#'
-  l: [base_colemak_dh, numbers_navigation]
-- p: [3, 13]
+  l: [default_layer]
+- p: [13, 3]
   k: $
-  l: [base_colemak_dh, numbers_navigation]
-- p: [4, 14]
-  k: '['
-  l: [base_colemak_dh, numbers_navigation]
+  l: [default_layer]
 - p: [10, 22]
   k: '%'
-  l: [base_colemak_dh, numbers_navigation]
-- p: [23, 11]
+  l: [default_layer]
+  a: bottom
+  o: -0.14
+- p: [11, 23]
   k: ^
-  l: [base_colemak_dh, numbers_navigation]
+  l: [default_layer]
+  a: bottom
+  o: -0.14
 - p: [24, 12]
-  k: '&'
-  l: [base_colemak_dh, numbers_navigation]
-- p: [25, 13]
+  k: {t: '&', s: '|'}
+  l: [default_layer]
+  a: bottom
+  o: -0.14
+- p: [13, 25]
   k: '*'
-  l: [base_colemak_dh, numbers_navigation]
-- p: [19, 7]
-  k: '-'
-  l: [base_colemak_dh, numbers_navigation]
-- p: [31, 19]
-  k: '='
-  l: [base_colemak_dh, numbers_navigation]
-- p: [30, 18]
-  k: <
-  l: [base_colemak_dh, numbers_navigation]
-- p: [32, 20]
-  k: '>'
-  l: [base_colemak_dh, numbers_navigation]
+  l: [default_layer]
+  a: bottom
+  o: -0.14
+- p: [14, 4]
+  k: '['
+  l: [default_layer]
 - p: [26, 14]
   k: (
-  l: [base_colemak_dh, numbers_navigation]
-- p: [23, 24]
-  k: TAB
-  l: [base_colemak_dh, numbers_navigation]
-- p: [24, 25]
-  k: ESC
-  l: [base_colemak_dh, numbers_navigation]
-- p: [30, 31]
-  k: ENTER
-  l: [base_colemak_dh, numbers_navigation]
-- p: [32, 31]
-  k: BACKSPACE
-  l: [base_colemak_dh, numbers_navigation]
-- p: [28, 16]
-  k: {t: gaming, h: toggle}
-  l: [base_colemak_dh, gaming]
-- p: [18, 6]
-  k: \
-  l: [base_colemak_dh, numbers_navigation]
+  l: [default_layer]
+- p: [17, 5]
+  k: ']'
+  l: [default_layer]
 - p: [29, 17]
   k: )
-- p: [5, 17]
-  k: ']'
+  l: [default_layer]
+- p: [21, 33]
+  k: {t: '`', s: '~'}
+  l: [default_layer]
+  a: bottom
+  o: -0.14
+- p: [30, 18]
+  k: <
+  l: [default_layer]
+  a: bottom
+  o: -0.14
+- p: [32, 20]
+  k: '>'
+  l: [default_layer]
+  a: bottom
+  o: -0.14
+- p: [8, 20]
+  k: {t: /, s: \}
+  l: [default_layer]
+- p: [18, 6]
+  k: {t: '-', s: _}
+  l: [default_layer]
+- p: [19, 7]
+  k: _
+  l: [default_layer]
+- p: [31, 19]
+  k: {t: '=', s: +}
+  l: [default_layer]
+  a: bottom
+  o: -0.14
+- p: [9, 21]
+  k: +
+  l: [default_layer]
+- p: [23, 24]
+  k: ↹
+  l: [default_layer]
+- p: [31, 30]
+  k: ⏎
+  l: [default_layer]
+- p: [32, 31]
+  k: {t: ⌫, s: ⌦}
+  l: [default_layer]
