@@ -115,6 +115,12 @@
 
             mods = <(MOD_LSFT)>;
         };
+
+        rot_msc: sensor_rotate_mouse_scroll {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+        };
     };
 
     combos {
@@ -270,7 +276,7 @@
 &none          &none         &none         &lt 3 ESCAPE   &lt SCROLL SPACE  &kp LEFT_COMMAND      &smart_shft  &mo NUM_NAV                                             &to 1
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&rot_msc SCRL_UP SCRL_DOWN>;
         };
 
         game_layer {
@@ -281,7 +287,7 @@
 &none             &none  &none  &kp TAB  &kp SPACE  &kp ENTER      &trans  &trans                            &to DEFAULT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&rot_msc SCRL_UP SCRL_DOWN>;
         };
 
         num_nav_layer {
