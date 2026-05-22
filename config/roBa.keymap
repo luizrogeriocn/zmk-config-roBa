@@ -267,7 +267,7 @@
 &kp Q          &kp W         &kp F         &kp P          &kp B                                                &kp J        &kp L          &kp U         &kp Y         &kp APOS
 &hrml LCTRL A  &hrml LALT R  &hrml LGUI S  &hrml LSHFT T  &kp G             &none                 &none        &kp M        &hrmr LSHFT N  &hrmr LGUI E  &hrmr LALT I  &hrmr LCTRL O
 &kp Z          &kp X         &kp C         &kp D          &kp V             &none                 &none        &kp K        &kp H          &comma_semi   &dot_colon    &qmrk_excl
-&none          &none         &none         &lt 3 ESCAPE   &lt SCROLL SPACE  &kp LEFT_COMMAND      &smart_shft  &mo NUM_NAV                                             &none
+&none          &none         &none         &lt 3 ESCAPE   &lt SCROLL SPACE  &kp LEFT_COMMAND      &smart_shft  &mo NUM_NAV                                             &to 1
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
@@ -275,10 +275,10 @@
 
         game_layer {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E  &kp R                          &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D  &kp F   &none          &none   &trans  &trans  &trans  &trans  &trans
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C  &kp V   &none          &none   &trans  &trans  &trans  &trans  &trans
-&kp ESCAPE        &none  &none  &none  &trans  &kp SPACE      &trans  &trans                          &to DEFAULT
+&kp ESCAPE        &kp Q  &kp W  &kp E    &kp R                             &trans  &kp F9  &kp F10  &kp F11  &kp F12
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D    &kp F      &none          &none   &trans  &kp F5  &kp F6   &kp F7   &kp F8
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C    &kp V      &none          &none   &trans  &kp F1  &kp F2   &kp F3   &kp F4
+&none             &none  &none  &kp TAB  &kp SPACE  &kp ENTER      &trans  &trans                            &to DEFAULT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -286,10 +286,10 @@
 
         num_nav_layer {
             bindings = <
-&kp PG_UP      &kp HOME  &kp UP_ARROW  &kp END    &none                      &none  &kp N7        &kp N8        &kp N9        &none
-&kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &none   &none       &none  &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
-&kp ESCAPE     &kp TAB   &kp ENTER     &bspc_del  &none   &none       &none  &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
-&none          &none     &none         &trans     &trans  &trans      &trans       &trans       &none
+&kp PG_UP      &kp HOME  &kp UP_ARROW  &kp END    &none                       &none   &kp N7        &kp N8        &kp N9        &none
+&kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &none   &none       &none   &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
+&kp ESCAPE     &kp TAB   &kp ENTER     &bspc_del  &none   &none       &none   &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
+&none          &none     &none         &trans     &trans  &trans      &trans  &trans                                            &none
             >;
         };
 
@@ -306,17 +306,17 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &mo 5     &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &none     &mkp MB5  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&none  &none  &none  &none  &none                    &none  &kp K_COPY  &kp PRINTSCREEN  &kp K_PASTE  &none
-&none  &none  &none  &none  &none  &none      &none  &none  &mkp LCLK   &mkp MB3         &mkp RCLK    &none
-&none  &none  &none  &none  &none  &none      &none  &none  &mkp MB4    &none            &mkp MB5     &none
-&none  &none  &none  &none  &none  &none      &none  &none                                            &none
+&none  &none  &none  &none  &none                    &none  &none      &none     &none      &none
+&none  &none  &none  &none  &none  &none      &none  &none  &mkp LCLK  &mkp MB3  &mkp RCLK  &none
+&none  &none  &none  &none  &none  &none      &none  &none  &mkp MB4   &none     &mkp MB5   &none
+&none  &none  &none  &none  &none  &none      &none  &none                                  &none
             >;
         };
     };
