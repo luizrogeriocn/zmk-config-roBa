@@ -279,6 +279,11 @@
             key-positions = <32 31>;
             layers = <DEFAULT>;
         };
+
+        fun {
+            bindings = <&mo 3>;
+            key-positions = <41 40>;
+        };
     };
 
     keymap {
@@ -289,7 +294,7 @@
 &kp Q          &kp W         &kp F         &kp P          &kp B                                                  &kp J                       &kp L          &kp U         &kp Y         &kp APOS
 &hrml LCTRL A  &hrml LALT R  &hrml LGUI S  &hrml LSHFT T  &kp G      &mkp MCLK                   &none           &kp M                       &hrmr LSHFT N  &hrmr LGUI E  &hrmr LALT I  &hrmr LCTRL O
 &kp Z          &kp X         &kp C         &kp D          &kp V      &mkp LCLK                   &mkp RCLK       &kp K                       &kp H          &comma_semi   &dot_colon    &qmrk_excl
-&none          &none         &none         &lt 3 ESCAPE   &kp SPACE  &mt LEFT_COMMAND ENTER      &td_smart_caps  &lt_num_bspc_del NUM_NAV 0                                             &to 1
+&none          &none         &none         &lt 5 ESCAPE   &kp SPACE  &mt LEFT_COMMAND ENTER      &td_smart_caps  &lt_num_bspc_del NUM_NAV 0                                             &to 1
             >;
 
             sensor-bindings = <&rot_msc SCRL_UP SCRL_DOWN>;
