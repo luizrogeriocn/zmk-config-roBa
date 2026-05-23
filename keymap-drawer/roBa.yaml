@@ -39,10 +39,10 @@ layers:
   - ''
   - ''
   - {t: ⎋, h: fun}
-  - {t: ⎵, h: '5'}
+  - ⎵
   - {t: ⏎, h: ⌘}
   - {t: ⇧, h: ⇪⇪, s: ⇪}
-  - {t: ⌫, h: num_nav}
+  - {t: ⌫, s: '⌦', h: num_nav}
   - {t: game, h: toggle}
   game:
   - ⎋

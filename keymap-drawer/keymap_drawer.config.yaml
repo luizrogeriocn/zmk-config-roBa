@@ -192,6 +192,7 @@ parse_config:
     '&mkp MCLK': '●'
     '&smart_shft': {t: '⇧', s: '⇪'}
     '&td_smart_caps': {t: '⇧', s: '⇪', h: '⇪⇪'}
+    '&lt_num_bspc_del': {t: '⌫', s: '⌦', h: 'num_nav'}
     '&td_shift_l': '⇧'
     '&td_shift_r': '⇧'
     '&td_nav_layer': {t: '⏎', h: 'NAV'}
