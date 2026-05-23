@@ -42,7 +42,7 @@ layers:
   - ⎵
   - ⌘
   - {t: ⇧, h: ⇪⇪, s: ⇪}
-  - {t: num_nav, h: toggle}
+  - num_nav
   - {t: game, h: toggle}
   game:
   - ⎋
@@ -130,7 +130,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - ''
   fun:
   - PRINTSCREEN
