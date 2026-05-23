@@ -187,6 +187,11 @@ parse_config:
     '&nav_word': 'NAV'
     '&caps_word_capslock': "Caps\nWord"
     '&caps_word': '⇪'
+    '&mkp LCLK': '◁'
+    '&mkp RCLK': '▷'
+    '&mkp MCLK': '●'
+    '&smart_shft': {t: '⇧', s: '⇪'}
+    '&td_smart_caps': {t: '⇧', s: '⇪', h: '⇪⇪'}
     '&td_shift_l': '⇧'
     '&td_shift_r': '⇧'
     '&td_nav_layer': {t: '⏎', h: 'NAV'}
@@ -238,6 +243,7 @@ parse_config:
     LEFT_BRACE: '{'
     LEFT_BRACKET: '['
     LEFT_COMMAND: ⌘
+    LEFT_SHIFT: ⇧
     LEFT_PARENTHESIS: (
     LESS_THAN: <
     LPAR: (
@@ -282,6 +288,7 @@ parse_config:
     LEFT_CONTROL: ⌃
     LEFT_ALT: ⎇
     LEFT_GUI: ⌘
+    LEFT_SHIFT: ⇧
     LEFT_SHFT: ⇧
     RALT: ⎇
     RGUI: ⌘

@@ -76,6 +76,13 @@
             mods = <(MOD_LSFT)>;
         };
 
+        td_smart_caps: tap_dance_smart_caps {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&smart_shft>, <&kp CAPSLOCK>;
+        };
+
         comma_semi: comma_semi {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -273,7 +280,7 @@
 &kp Q          &kp W         &kp F         &kp P          &kp B                                         &kp J        &kp L          &kp U         &kp Y         &kp APOS
 &hrml LCTRL A  &hrml LALT R  &hrml LGUI S  &hrml LSHFT T  &kp G      &mkp MCLK             &none        &kp M        &hrmr LSHFT N  &hrmr LGUI E  &hrmr LALT I  &hrmr LCTRL O
 &kp Z          &kp X         &kp C         &kp D          &kp V      &mkp LCLK             &mkp RCLK    &kp K        &kp H          &comma_semi   &dot_colon    &qmrk_excl
-&none          &none         &none         &lt 3 ESCAPE   &kp SPACE  &kp LEFT_COMMAND      &smart_shft  &mo NUM_NAV                                             &to 1
+&none          &none         &none         &lt 3 ESCAPE   &lt SCROLL SPACE  &mt LEFT_COMMAND ENTER  &td_smart_caps  &lt NUM_NAV BACKSPACE                         &to 1
             >;
 
             sensor-bindings = <&rot_msc SCRL_UP SCRL_DOWN>;
