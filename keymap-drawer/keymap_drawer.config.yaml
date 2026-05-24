@@ -190,8 +190,7 @@ parse_config:
     '&mkp LCLK': '◁'
     '&mkp RCLK': '▷'
     '&mkp MCLK': '●'
-    '&smart_shft': {t: '⇧', s: '⇪'}
-    '&td_smart_caps': {t: '⇧', s: '⇪', h: '⇪⇪'}
+    '&td_shift_caps': {t: '⇧', h: '⇪⇪'}
     '&lt_num_bspc_del': {t: '⌫', s: '⌦', h: 'num_nav'}
     '&td_shift_l': '⇧'
     '&td_shift_r': '⇧'
