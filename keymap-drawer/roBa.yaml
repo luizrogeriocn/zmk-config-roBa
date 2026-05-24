@@ -41,7 +41,7 @@ layers:
   - {t: ⎋, h: '5'}
   - ⎵
   - ⌘
-  - {t: ⇧, h: ⇪⇪, s: ⇪}
+  - {t: ⇧, h: ⇪⇪}
   - num_nav
   - {t: game, h: toggle}
   game:
